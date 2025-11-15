@@ -44,8 +44,8 @@ class Window(tk.Tk):
         if hasattr(self, "gf4"):
             self.gf4.destroy()
             
-        # if hasattr(self, "af1"):
-            # self.af1.destroy()
+        if hasattr(self, "af1"):
+            self.af1.destroy()
             
         self.mf1 = MenuFrame1(self)
         self.mf1.grid(row=0, column=0)
@@ -70,11 +70,11 @@ class Window(tk.Tk):
         self.gf4.grid(row=0, column=0, sticky="nsew")
         self.gf4.end_game(hidden_word)
         
-    # def switch_about_fr(self):
-        # self.mf1.destroy()
-        # self.mf2.destroy()
-        # self.af1 = AboutFrame1(self)
-        # self.af1.grid(row=0, column=0, sticky="nsew")
+    def switch_about_fr(self):
+        self.mf1.destroy()
+        self.mf2.destroy()
+        self.af1 = AboutFrame1(self)
+        self.af1.grid(row=0, column=0, sticky="nsew")
         
         
     def exit_app(self):
