@@ -20,9 +20,6 @@ def extract_res():
 
 if __name__ == "__main__":
 
-    if not os.path.exists(paths.windows_localdata_dir):
-        os.mkdir(paths.windows_localdata_dir)
-
     if not os.path.exists(paths.assets_dir):
         os.mkdir(paths.assets_dir)
 
