@@ -1,7 +1,7 @@
 
 import os
 import __main__
-iscompiled = True
+iscompiled = False
 main_filepath = __main__.__file__
 base_dir = os.path.dirname(os.path.dirname(main_filepath)) if iscompiled else os.path.dirname(main_filepath)
 res_filepath = os.path.join(base_dir, "assets.zip")
